@@ -1,0 +1,25 @@
+const Button = ({
+  children,
+  variant = "primary",
+  className = "",
+  ...props
+}) => {
+  const variants = {
+    primary: "bg-primary text-white hover:bg-primary-hover",
+    outline:
+      "border border-border text-text-primary hover:bg-surface-secondary",
+  };
+
+  return (
+    <button
+      className={`rounded-full px-6 py-3 font-medium transition ${
+        variants[variant]
+      } ${className}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
+};
+
+export default Button;

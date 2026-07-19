@@ -1,1 +1,83 @@
 @import "tailwindcss";
+
+@custom-variant hover (&:hover);
+:root {
+  --background: #fcfcfc;
+  --surface: #ffffff;
+  --surface-secondary: #f4f3f8;
+
+  --primary: #5b3ac7;
+  --primary-hover: #3e2787;
+  --primary-soft: #eee9fc;
+
+  --text-primary: #151326;
+  --text-secondary: #68657a;
+  --text-muted: #9793a5;
+
+  --border: #e7e4ee;
+
+  --accent-pink: #f2b5d2;
+  --accent-orange: #ff8a1d;
+  --accent-yellow: #ffe34f;
+  --accent-blue: #afe9f5;
+
+  color-scheme: light;
+}
+.dark {
+  --background: #11101a;
+  --surface: #1a1826;
+  --surface-secondary: #242134;
+
+  --primary: #7c60e5;
+  --primary-hover: #9279ef;
+  --primary-soft: #2c234d;
+
+  --text-primary: #f7f6fc;
+  --text-secondary: #bbb7ca;
+  --text-muted: #88849a;
+
+  --border: #343047;
+
+  --accent-pink: #f2b5d2;
+  --accent-orange: #ff9a3d;
+  --accent-yellow: #ffe45e;
+  --accent-blue: #8bdbea;
+
+  color-scheme: dark;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-secondary: var(--surface-secondary);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-soft: var(--primary-soft);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --color-border: var(--border);
+
+  --color-accent-pink: var(--accent-pink);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-accent-blue: var(--accent-blue);
+}
+html {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+@font-face {
+    font-family: geo;
+    src: url(/fonts/Geomini-VariableFont_wght.ttf);
+}
