@@ -20,17 +20,17 @@ function HeroContent() {
         <span className="block text-primary font-[geo]">web experiences.</span>
       </motion.h1>
 
-      <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55, duration: 0.6 }} className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row font-[geo]">
-        <Button onClick={() => scrollToSection("projects")} className="w-full  sm:w-auto">
+      <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55, duration: 0.6 }} className="mt-8 flex w-full flex-row  gap-3 sm:w-auto justify-center items-center font-[geo]">
+        <Button onClick={() => scrollToSection("projects")} className=" w-[145px]  text-[12px]  sm:w-auto">
           View Projects
         </Button>
 
-        <Button variant="outline" onClick={() => scrollToSection("contact")} className="w-full  sm:w-auto">
+        <Button variant="outline" onClick={() => scrollToSection("contact")} className="w-[145px]  text-[12px]  sm:w-auto">
           Contact Me
         </Button>
       </motion.div>
 
-      <motion.button type="button" onClick={() => scrollToSection("about")} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="mt-12 hidden items-center gap-3 text-sm font-medium text-text-secondary transition-colors hover:text-primary lg:flex">
+      <motion.button type="button" onClick={() => scrollToSection("about")} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="mt-12 hidden cursor-pointer items-center gap-3 text-sm font-medium text-text-secondary transition-colors hover:text-primary lg:flex">
         <motion.span animate={{ y: [0, 6, 0] }} transition={{ duration: 1.8, repeat: Infinity }} className="flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg">
           ↓
         </motion.span>
