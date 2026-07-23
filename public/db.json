@@ -5,5 +5,71 @@
     { "id": 3, "title": "Projects", "path": "/projects" },
     { "id": 4, "title": "About", "path": "/about" },
     { "id": 5, "title": "Contact", "path": "/contact" }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "React",
+      "icon": "/icons/hero/react.svg",
+      "className": "left-[8%] top-[18%]",
+      "delay": 0,
+      "duration": 4.2
+    },
+    {
+      "id": 2,
+      "name": "TypeScript",
+      "icon": "/icons/hero/typescript.svg",
+      "className": "right-[8%] top-[16%]",
+      "delay": 0.6,
+      "duration": 4.8
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "icon": "/icons/hero/javascript.svg",
+      "className": "right-[1%] top-[48%]",
+      "delay": 1,
+      "duration": 4.4
+    },
+    {
+      "id": 4,
+      "name": "Tailwind CSS",
+      "icon": "/icons/hero/tailwind.svg",
+      "className": "bottom-[8%] right-[18%]",
+      "delay": 0.3,
+      "duration": 5
+    },
+    {
+      "id": 5,
+      "name": "Vite",
+      "icon": "/icons/hero/vite.svg",
+      "className": "bottom-[2%] left-1/2 -translate-x-1/2",
+      "delay": 0.9,
+      "duration": 4.6
+    },
+    {
+      "id": 6,
+      "name": "Git",
+      "icon": "/icons/hero/git.svg",
+      "className": "bottom-[10%] left-[14%]",
+      "delay": 0.5,
+      "duration": 4.1
+    },
+    {
+      "id": 7,
+      "name": "Axios",
+      "icon": "/icons/hero/axios.svg",
+      "className": "left-[1%] top-[50%]",
+      "delay": 1.2,
+      "duration": 4.9
+    },
+    {
+      "id": 8,
+      "name": "Figma",
+      "icon": "/icons/hero/figma.svg",
+      "className": "left-1/2 top-[2%] -translate-x-1/2",
+      "delay": 0.2,
+      "duration": 4.5
+    }
   ]
 }
