@@ -33,8 +33,8 @@ export default function SkillsOrbit() {
     <div className="relative mx-auto aspect-square w-full max-w-[540px]">
       <motion.div animate={{ scale: [1, 1.06, 1], opacity: [0.35, 0.65, 0.35] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute inset-[18%] rounded-full bg-primary/15 blur-[75px]" />
 
-      <div className="absolute inset-[12%] rounded-full border border-dashed border-primary/20" />
-      <div className="absolute inset-[26%] rounded-full border border-dashed border-primary/15" />
+      <div className="absolute inset-[12%] rounded-full border border-dashed border-white/20" />
+      <div className="absolute inset-[26%] rounded-full border border-dashed border-white/15" />
 
       <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute left-1/2 top-1/2 z-10 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-primary/20 bg-white/90 backdrop-blur-md sm:h-40 sm:w-40">
         <div className="flex items-center gap-1">
