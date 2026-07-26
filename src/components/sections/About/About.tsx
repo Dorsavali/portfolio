@@ -6,7 +6,7 @@ import Container from "@/components/common/Container";
 export default function About() {
   return (
 <Container>
-  <section id="about" className="relative overflow-hidden py-20 sm:py-24 lg:py-0 lg:h-[clamp(650px,75vh,760px)]">
+  <section id="about" className="relative overflow-hidden py-20 sm:py-24 lg:py-0 lg:h-[clamp(650px,75vh,760px)] px-5 lg:px-0">
       <div className="pointer-events-none absolute -left-40 top-1/2 h-[420px] w-[420px] -translate-y-1/2 rounded-full  blur-[110px]" />
       <div className="pointer-events-none absolute -right-40 top-1/2 h-[520px] w-[520px] -translate-y-1/2 rounded-full  blur-[120px]" />
 

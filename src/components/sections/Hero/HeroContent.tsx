@@ -31,7 +31,7 @@ function HeroContent() {
       </motion.div>
 
       <motion.button type="button" onClick={() => scrollToSection("about")} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }} className="mt-12 hidden cursor-pointer items-center gap-3 text-sm font-medium text-text-secondary transition-colors hover:text-primary lg:flex">
-        <motion.span animate={{ y: [0, 6, 0] }} transition={{ duration: 1.8, repeat: Infinity }} className="flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg">
+        <motion.span animate={{ y: [0, 6, 0] }} transition={{ duration: 1.8, repeat: Infinity }} className="flex h-11 w-11 items-center justify-center rounded-full bg-white ">
           ↓
         </motion.span>
         Scroll down

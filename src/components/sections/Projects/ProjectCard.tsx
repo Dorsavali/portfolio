@@ -52,16 +52,16 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             {String(index + 1).padStart(2, "0")}
           </span>
           <span className="h-px w-10 bg-primary/40" />
-          <span className="text-[11px] font-medium uppercase tracking-[0.18em] font-[geo] text-text-secondary">
+          <span className="text-[10px] font-medium uppercase tracking-[0.18em] font-[geo] text-text-secondary">
             {project.category}
           </span>
         </div>
 
-        <h3 className="text-3xl font-[geo] font-bold tracking-tight text-text-primary sm:text-3xl">
+        <h3 className="text-xl font-[geo] font-bold tracking-tight text-text-primary sm:text-3xl">
           {project.title}
         </h3>
 
-        <p className="mt-5 max-w-xl font-[geo] text-base leading-8 text-text-secondary sm:text-md">
+        <p className="mt-5 max-w-xl text-[12px] font-[geo] text-base leading-8 text-text-secondary sm:text-md">
           {project.description}
         </p>
 

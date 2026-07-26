@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { projects } from "../../../data/projects";
+import { projects } from "../../../data/Projects";
 import ProjectCard from "./ProjectCard";
 
 function ProjectsSkeleton() {
@@ -44,12 +44,12 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-white py-5 sm:py-24 lg:py-12"
+      className="relative overflow-hidden bg-white py-8 sm:py-24 lg:py-12 relative mx-auto flex max-w-7xl flex-col items-center gap-16 px-5 lg:flex-row lg:gap-20 lg:px-10"
     >
       <div className="pointer-events-none absolute left-[-200px] top-[25%] h-[480px] w-[480px] rounded-full bg-primary/[0.04] blur-[130px]" />
       <div className="pointer-events-none absolute right-[-220px] bottom-[10%] h-[460px] w-[460px] rounded-full bg-primary/[0.04] blur-[130px]" />
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+      <div className="relative mx-auto max-w-7xl lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -59,17 +59,17 @@ export default function Projects() {
         >
           <div className="mb-5 flex items-center justify-center gap-3">
             <span className="h-[2px] w-10 bg-primary" />
-            <span className="font-medium text-primary font-[geo]">Selected Projects</span>
+            <span className="font-medium text-[14px] text-primary font-[geo]">Selected Projects</span>
             <span className="h-[2px] w-10 bg-primary" />
           </div>
 
-          <h2 className="text-3xl font-bold font-[geo] leading-tight tracking-tight text-text-primary sm:text-4xl lg:text-5xl">
+          <h2 className="text-xl font-bold font-[geo] leading-tight tracking-tight text-text-primary sm:text-4xl lg:text-5xl">
             A selection of projects I've
             <span className="text-primary font-[geo]"> designed and developed.</span>
           </h2>
         </motion.div>
 
-        <div className="mt-20 space-y-24  lg:space-y-36">
+        <div className="mt-10 lg:mt-20 space-y-24  lg:space-y-36">
           {featuredProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

@@ -1,4 +1,5 @@
 import { ArrowUp, Mail } from "lucide-react";
+import Container from "../common/Container";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -9,15 +10,16 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-primary text-white">
+    <Container>
+      <footer className="bg-primary text-white">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-12 px-6 py-8 md:flex-row md:items-end lg:px-10">
         <div>
 
-          <h2 className="mt-6 text-3xl font-medium sm:text-4xl font-[geo]">
+          <h2 className="mt-6 text-xl font-medium sm:text-4xl font-[geo]">
             Dorsa Valli
           </h2>
 
-          <p className="mt-3 text-white/75 font-[geo]">
+          <p className="mt-3 text-sm text-white/75 font-[geo]">
             Front-End Developer
           </p>
         </div>
@@ -51,5 +53,6 @@ export default function Footer() {
         <ArrowUp className="h-6 w-6" />
       </button>
     </footer>
+    </Container>
   );
 }

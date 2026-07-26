@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { menuItems } from "../../data/menu";
+import { menuItems } from "../../data/Menu";
 import Container from "../common/Container";
 
 function Header() {
@@ -55,7 +55,7 @@ function Header() {
 
       <aside
         id="menu"
-        className={`fixed right-0 top-0 z-50 h-screen w-[80%] bg-background shadow-2xl transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-1/2 lg:w-180 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed right-0 top-0 z-50 h-screen w-[80%] bg-background  transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform sm:w-1/2 lg:w-180 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex justify-end p-5">
           <button

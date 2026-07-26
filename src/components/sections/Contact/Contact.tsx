@@ -28,38 +28,38 @@ export default function Contact() {
               Get In Touch
             </span>
 
-            <h2 className="mt-5 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl font-[geo]">
+            <h2 className="mt-5 text-xl font-bold leading-tight sm:text-5xl lg:text-3xl font-[geo]">
               Let&apos;s build something
               <span className="block">amazing together.</span>
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-white/75 sm:text-lg font-[geo]">
+            <p className="mx-auto mt-6 max-w-2xl text-[12px] leading-8 text-white/75 sm:text-lg font-[geo]">
               I&apos;m always open to discussing new projects, creative ideas
               and opportunities to create modern digital experiences.
             </p>
 
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-nowrap items-center justify-center gap-2">
               <a
                 href="https://mail.google.com/mail/?view=cm&fs=1&to=mrs.dorsa.vali@gmail.com&su=Portfolio%20Contact"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-block"
+                className="w-36 sm:w-40"
               >
                 <Button
                   type="button"
-                  className="inline-flex min-w-44 items-center justify-center gap-2 hover:bg-primary-hover"
+                  className="flex w-full items-center justify-center gap-2 whitespace-nowrap px-3 py-2 text-sm hover:bg-primary-hover"
                 >
-                  <Mail className="h-5 w-5" />
+                  <Mail className="h-4 w-4 shrink-0" />
                   Send Email
                 </Button>
               </a>
 
               <Button
                 variant="outline"
-                className="inline-flex min-w-44 items-center justify-center gap-2 border-white/70 text-white hover:bg-white/10"
+                className="flex w-36 items-center justify-center gap-2 whitespace-nowrap border-white/70 px-3 py-2 text-sm text-white hover:bg-white/10 sm:w-40"
                 onClick={handleDownloadCV}
               >
-                <Download className="h-5 w-5" />
+                <Download className="h-4 w-4 shrink-0" />
                 Download CV
               </Button>
             </div>
