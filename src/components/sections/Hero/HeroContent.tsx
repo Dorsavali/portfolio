@@ -5,8 +5,9 @@ function HeroContent() {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: "smooth",
+      block: "start",
     });
-  };
+  };  
 
   return (
     <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, ease: "easeOut" }} className="z-10 flex w-full max-w-xl flex-col items-center text-center lg:items-start lg:text-left">
@@ -21,7 +22,7 @@ function HeroContent() {
       </motion.h1>
 
       <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.55, duration: 0.6 }} className="mt-8 flex w-full flex-row  gap-3 sm:w-auto justify-center items-center font-[geo]">
-        <Button onClick={() => scrollToSection("projects")} className=" w-[145px]  text-[12px]  sm:w-auto">
+        <Button onClick={() => scrollToSection("projects")} className=" w-[145px]  text-[12px]  sm:w-auto" >
           View Projects
         </Button>
 

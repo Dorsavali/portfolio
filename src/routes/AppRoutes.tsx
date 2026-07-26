@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "@/pages/HomePage";
 import MainLayout from "@/components/layout/MainLayout";
 import ServicesPage from "@/pages/ServicesPage";
+import ProjectsPage from "@/pages/ProjectsPage";
 
 
 export default function AppRoutes() {
@@ -10,6 +11,7 @@ export default function AppRoutes() {
       <Route element={<MainLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/projects" element={<ProjectsPage/>} />
       </Route>
     </Routes>
   );
