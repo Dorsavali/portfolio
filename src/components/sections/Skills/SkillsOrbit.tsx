@@ -1,34 +1,8 @@
 import { motion } from "framer-motion";
-import { useQuery } from "@tanstack/react-query";
 import SkillIcon from "./SkillIcon";
-import { getSkills } from "../../../services/Skills";
+import { skills } from "../../../data/Skills";
 
 export default function SkillsOrbit() {
-  const {
-    data: skills = [],
-    isLoading,
-    isError,
-  } = useQuery({
-    queryKey: ["skills"],
-    queryFn: getSkills,
-  });
-
-  if (isLoading) {
-    return (
-      <div className="relative mx-auto flex aspect-square w-full max-w-[540px] items-center justify-center">
-        <div className="h-10 w-10 animate-spin rounded-full border-2 border-primary/20 border-t-primary" />
-      </div>
-    );
-  }
-
-  if (isError) {
-    return (
-      <div className="relative mx-auto flex aspect-square w-full max-w-[540px] items-center justify-center">
-        <p className="text-sm text-text-secondary">Skills could not be loaded.</p>
-      </div>
-    );
-  }
-
   return (
     <div className="relative mx-auto aspect-square w-full max-w-[540px]">
       <motion.div animate={{ scale: [1, 1.06, 1], opacity: [0.35, 0.65, 0.35] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute inset-[18%] rounded-full bg-primary/15 blur-[75px]" />

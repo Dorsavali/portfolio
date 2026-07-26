@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="pointer-events-none absolute -bottom-28 -right-20 h-72 w-72 rounded-full bg-white/10 blur-[100px]" />
 
           <div className="relative mx-auto max-w-4xl">
-            <span className="text-sm font-medium uppercase tracking-[0.3em] text-white/70 font-[geo]">
+            <span className="text-sm font-medium font-[geo] uppercase tracking-[0.3em] text-white/70 font-[geo]">
               Get In Touch
             </span>
 

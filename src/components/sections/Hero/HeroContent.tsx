@@ -15,7 +15,7 @@ function HeroContent() {
         <span className="font-medium text-primary font-[geo] text-[14px]">Hi, I'm Dorsa</span>
       </motion.div>
 
-      <motion.h1 initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25, duration: 0.6 }} className="text-4xl font-bold leading-[1.15] tracking-tight text-text-primary sm:text-4xl md:text-5xl lg:text-6xl">
+      <motion.h1 initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25, duration: 0.6 }} className="text-4xl font-bold leading-[1.15] font-[geo] tracking-tight text-text-primary sm:text-3xl md:text-4xl lg:text-5xl">
         I build modern
         <span className="block text-primary font-[geo]">web experiences.</span>
       </motion.h1>

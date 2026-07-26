@@ -9,7 +9,6 @@ export const projects: Project[] = [
     thumbnail: "/images/projects/portfolio.png",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/username/portfolio",
-    demoUrl: "https://portfolio.example.com",
     featured: true,
   },
   {
@@ -20,6 +19,7 @@ export const projects: Project[] = [
     thumbnail: "/images/projects/libremobileos.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Vite"],
     githubUrl: "https://github.com/Dorsavali/LibreMobileOS",
+    demoUrl: "https://libremobileos.com",
     featured: true,
   },
 ];

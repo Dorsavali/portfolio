@@ -13,11 +13,11 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-12 px-6 py-8 md:flex-row md:items-end lg:px-10">
         <div>
 
-          <h2 className="mt-6 text-3xl font-medium sm:text-4xl">
+          <h2 className="mt-6 text-3xl font-medium sm:text-4xl font-[geo]">
             Dorsa Valli
           </h2>
 
-          <p className="mt-3 text-white/75">
+          <p className="mt-3 text-white/75 font-[geo]">
             Front-End Developer
           </p>
         </div>
@@ -37,11 +37,11 @@ export default function Footer() {
             </a>
           </div>
 
-          <p className="mt-6 text-sm text-white/80 sm:text-base">
+          <p className="mt-6 text-sm text-white/80 font-[geo] sm:text-base">
             © 2026 Dorsa Valli. All Rights Reserved.
           </p>
 
-          <p className="mt-3 text-sm text-white/80 sm:text-base">
+          <p className="mt-3 text-sm text-white/80 font-[geo] sm:text-base">
             Designed and developed by Dorsa Valli
           </p>
         </div>

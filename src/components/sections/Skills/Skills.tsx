@@ -4,7 +4,7 @@ import SkillsOrbit from "./SkillsOrbit";
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative overflow-hidden bg-primary py-10 sm:py-24 lg:py-28">
+    <section id="skills" className="relative overflow-hidden bg-primary py-10 sm:py-20 lg:py-22">
       <div className="pointer-events-none absolute left-[-180px] top-1/2 h-[420px] w-[420px] -translate-y-1/2 rounded-full bg-primary blur-[110px]" />
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-16 px-6 lg:flex-row lg:gap-20 lg:px-10">
