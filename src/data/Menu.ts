@@ -1,0 +1,9 @@
+import type { MenuItem } from "../types/Menu";
+
+export const menuItems: MenuItem[] = [
+  { id: 1, title: "Home", path: "/" },
+  { id: 2, title: "Services", path: "/services" },
+  { id: 3, title: "Projects", path: "/projects" },
+  { id: 4, title: "About", path: "/about" },
+  { id: 5, title: "Contact", path: "/contact" },
+];
