@@ -3,6 +3,7 @@ import HomePage from "@/pages/HomePage";
 import MainLayout from "@/components/layout/MainLayout";
 import ServicesPage from "@/pages/ServicesPage";
 import ProjectsPage from "@/pages/ProjectsPage";
+import AboutPage from "@/pages/AboutPage";
 
 
 export default function AppRoutes() {
@@ -12,6 +13,7 @@ export default function AppRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/projects" element={<ProjectsPage/>} />
+        <Route path="/about" element={<AboutPage />} />
       </Route>
     </Routes>
   );
