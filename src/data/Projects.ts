@@ -9,7 +9,7 @@ export const projects: Project[] = [
       "A modern and responsive personal portfolio designed to showcase my projects, skills and professional experience with smooth animations and a clean user interface.",
     thumbnail: "/images/projects/portfolio.png",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/username/portfolio",
+    githubUrl: "https://github.com/Dorsavali/portfolio",
     featured: true,
   },
   {
