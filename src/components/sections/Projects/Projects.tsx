@@ -1,40 +1,10 @@
 import { motion } from "framer-motion";
 import { projects } from "../../../data/Projects";
 import ProjectCard from "./ProjectCard";
+import { Link } from "react-router-dom";
+import Button from "@/components/common/Button";
 
-function ProjectsSkeleton() {
-  return (
-    <div className="mt-20 space-y-24 lg:mt-5 lg:space-y-36">
-      {[1, 2, 3].map((item) => (
-        <div
-          key={item}
-          className="grid animate-pulse items-center gap-10 lg:grid-cols-2 lg:gap-16"
-        >
-          <div className="aspect-[16/10] rounded-[28px] bg-surface-secondary" />
 
-          <div>
-            <div className="h-4 w-36 rounded-full bg-surface-secondary" />
-            <div className="mt-6 h-10 w-3/4 rounded-lg bg-surface-secondary" />
-            <div className="mt-6 h-4 w-full rounded bg-surface-secondary" />
-            <div className="mt-3 h-4 w-5/6 rounded bg-surface-secondary" />
-            <div className="mt-3 h-4 w-2/3 rounded bg-surface-secondary" />
-
-            <div className="mt-6 flex gap-3">
-              <div className="h-9 w-24 rounded-full bg-surface-secondary" />
-              <div className="h-9 w-24 rounded-full bg-surface-secondary" />
-              <div className="h-9 w-24 rounded-full bg-surface-secondary" />
-            </div>
-
-            <div className="mt-8 flex gap-4">
-              <div className="h-12 w-36 rounded-2xl bg-surface-secondary" />
-              <div className="h-12 w-36 rounded-2xl bg-surface-secondary" />
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 export default function Projects() {
   const featuredProjects = projects.filter(
@@ -44,11 +14,9 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden bg-white py-8 sm:py-24 lg:py-12 relative mx-auto flex max-w-7xl flex-col items-center gap-16 px-5 lg:flex-row lg:gap-20 lg:px-10"
+      className="relative overflow-hidden bg-white py-8 sm:py-24 lg:py-12 relative mx-auto flex max-w-7xl flex-col items-center gap-16 px-5  lg:gap-0 lg:px-10"
     >
-      <div className="pointer-events-none absolute left-[-200px] top-[25%] h-[480px] w-[480px] rounded-full bg-primary/[0.04] blur-[130px]" />
-      <div className="pointer-events-none absolute right-[-220px] bottom-[10%] h-[460px] w-[460px] rounded-full bg-primary/[0.04] blur-[130px]" />
-
+    
       <div className="relative mx-auto max-w-7xl lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -59,21 +27,31 @@ export default function Projects() {
         >
           <div className="mb-5 flex items-center justify-center gap-3">
             <span className="h-[2px] w-10 bg-primary" />
-            <span className="font-medium text-[14px] text-primary font-[geo]">Selected Projects</span>
+            <span className="font-medium text-[14px] text-primary font-[geo]">
+              Selected Projects
+            </span>
             <span className="h-[2px] w-10 bg-primary" />
           </div>
 
           <h2 className="text-xl font-bold font-[geo] leading-tight tracking-tight text-text-primary sm:text-4xl lg:text-5xl">
             A selection of projects I've
-            <span className="text-primary font-[geo]"> designed and developed.</span>
+            <span className="text-primary font-[geo]">
+              {" "}
+              designed and developed.
+            </span>
           </h2>
         </motion.div>
 
         <div className="mt-10 lg:mt-20 space-y-24  lg:space-y-36">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.slice(0, 2).map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
+      </div>
+      <div className=" flex justify-center">
+        <Link to="/projects">
+          <Button variant="primary">View All Projects</Button>
+        </Link>
       </div>
     </section>
   );

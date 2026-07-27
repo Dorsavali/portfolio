@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft,  Mail, MapPin } from "lucide-react";
-import { Link } from "react-router-dom";
+import {  Mail, MapPin } from "lucide-react";
 import Button from "../components/common/Button";
 
 function Contact() {

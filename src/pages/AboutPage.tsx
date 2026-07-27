@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, Download } from "lucide-react";
-import { Link } from "react-router-dom";
+import {Download } from "lucide-react";
 import Button from "../components/common/Button";
 
 function About() {

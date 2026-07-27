@@ -1,5 +1,5 @@
 import api from "./api";
-import type { Project } from "../types/project";
+import type { Project } from "../types/Project";
 
 interface ProjectsResponse {
   projects: Project[];
