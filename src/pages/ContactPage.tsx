@@ -1,10 +1,50 @@
 import { motion } from "framer-motion";
 import {  Mail, MapPin } from "lucide-react";
 import Button from "../components/common/Button";
+import { Helmet } from "react-helmet-async";
 
 function Contact() {
   return (
     <main className="min-h-screen bg-background px-5 py-10 sm:px-8 lg:px-16">
+
+  <Helmet>
+    <title>Contact | Dorsa Valli</title>
+
+    <meta
+      name="description"
+      content="Get in touch with Dorsa Valli, a Front-End Developer specializing in React, TypeScript, Tailwind CSS and modern web development."
+    />
+
+    <meta
+      name="keywords"
+      content="Dorsa Valli, Frontend Developer, React Developer, TypeScript, Portfolio"
+    />
+
+    <meta property="og:title" content="Contact | Dorsa Valli" />
+
+    <meta
+      property="og:description"
+      content="Frontend Developer specializing in React and modern web technologies."
+    />
+
+    <meta
+      property="og:image"
+      content="https://dorsavalli.com/images/logo.png"
+    />
+
+    <meta
+      property="og:url"
+      content="https://dorsavalli.com/contact"
+    />
+
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="canonical"
+      href="https://dorsavalli.com/contact"
+    />
+  </Helmet>
+
       <div className="mx-auto max-w-5xl">
 
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">

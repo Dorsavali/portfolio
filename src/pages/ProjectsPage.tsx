@@ -3,10 +3,50 @@ import {  ExternalLink } from "lucide-react";
 
 import Button from "../components/common/Button";
 import { projects } from "../data/Projects";
+import { Helmet } from "react-helmet-async";
 
 function Projects() {
   return (
     <main className="bg-background py-10 sm:py-24 lg:py-10">
+
+  <Helmet>
+    <title>Projects | Dorsa Valli</title>
+
+    <meta
+      name="description"
+      content="Explore the projects of Dorsa Valli, a Front-End Developer specializing in React, TypeScript, Tailwind CSS and modern web development."
+    />
+
+    <meta
+      name="keywords"
+      content="Dorsa Valli, Frontend Developer, React Developer, TypeScript, Portfolio"
+    />
+
+    <meta property="og:title" content="Projects | Dorsa Valli" />
+
+    <meta
+      property="og:description"
+      content="Frontend Developer specializing in React and modern web technologies."
+    />
+
+    <meta
+      property="og:image"
+      content="https://dorsavalli.com/images/logo.png"
+    />
+
+    <meta
+      property="og:url"
+      content="https://dorsavalli.com/projects"
+    />
+
+    <meta property="og:type" content="website" />
+
+    <link
+      rel="canonical"
+      href="https://dorsavalli.com/projects"
+    />
+  </Helmet>
+
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
