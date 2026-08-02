@@ -6,7 +6,7 @@ export default function AboutIllustration() {
     <div className="relative mx-auto aspect-[6/5] w-full max-w-[650px] hidden lg:flex">
       <motion.div animate={{ scale: [1, 1.05, 1], opacity: [0.45, 0.75, 0.45] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className="absolute inset-[15%] rounded-full bg-primary/15 blur-[75px]" />
 
-      <motion.img src="/images/about/about-girl.png" alt="Dorsa working at her development workspace" animate={{ y: [0, -7, 0] }} transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }} className="relative z-10 h-full w-full object-contain " />
+      <motion.img src="/images/about/about-girl.webp" alt="Dorsa working at her development workspace" animate={{ y: [0, -7, 0] }} transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }} className="relative z-10 h-full w-full object-contain " />
 
       <FloatingCard className="right-[1%] top-[14%] hidden sm:block" delay={0.7} duration={4.8} distance={10}>
         <div className="w-28 space-y-2">

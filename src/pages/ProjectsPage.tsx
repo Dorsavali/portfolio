@@ -31,7 +31,7 @@ function Projects() {
 
     <meta
       property="og:image"
-      content="https://dorsavalli.com/images/logo.png"
+      content="https://dorsavalli.com/images/logo.webp"
     />
 
     <meta

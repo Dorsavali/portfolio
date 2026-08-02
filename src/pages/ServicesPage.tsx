@@ -26,7 +26,7 @@ function ServicesPage() {
 
         <meta
           property="og:image"
-          content="https://dorsavalli.com/images/logo.png"
+          content="https://dorsavalli.com/images/logo.webp"
         />
 
         <meta property="og:url" content="https://dorsavalli.com/services" />

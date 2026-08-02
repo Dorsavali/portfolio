@@ -23,7 +23,7 @@ function Header() {
         <div className="flex w-1/2 items-center bg-background pl-4 lg:pl-30">
           <NavLink to="/" onClick={handleMenuClose}>
             <img
-              src="/images/logoHeader.png"
+              src="/images/logoHeader.webp"
               alt="Dorsa Valli logo"
               className="w-40 lg:w-48"
             />

@@ -37,7 +37,7 @@ function About() {
 
         <meta
           property="og:image"
-          content="https://dorsavalli.com/images/logo.png"
+          content="https://dorsavalli.com/images/logo.webp"
         />
 
         <meta property="og:url" content="https://dorsavalli.com/about" />
@@ -57,7 +57,7 @@ function About() {
           >
             <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
               <img
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Dorsa Vali"
                 className="lg:aspect-[4/5] w-full rounded-2xl object-cover"
               />

@@ -7,7 +7,7 @@ export const projects: Project[] = [
     category: "Personal Portfolio",
     description:
       "A modern and responsive personal portfolio designed to showcase my projects, skills and professional experience with smooth animations and a clean user interface.",
-    thumbnail: "/images/projects/portfolio.png",
+    thumbnail: "/images/projects/portfolio.webp",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/Dorsavali/portfolio",
     featured: true,
@@ -18,7 +18,7 @@ export const projects: Project[] = [
     category: "Responsive Landing Page",
     description:
       "A responsive website developed for LibreMobileOS, focused on presenting the operating system, its main features and project identity through a clean and modern user interface.",
-    thumbnail: "/images/projects/libremobileos.png",
+    thumbnail: "/images/projects/libremobileos.webp",
     technologies: ["HTML5", "CSS3", "JavaScript", "Vite"],
     githubUrl: "https://github.com/Dorsavali/LibreMobileOS",
     demoUrl: "https://libremobileos.com",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     category: "Responsive E-commerce Website",
     description:
       "A responsive e-commerce website inspired by Digikala, developed with React and Redux. The project includes product categories, sliders, suggested products, trending sections, responsive navigation and desktop and mobile mega menus.",
-    thumbnail: "/images/projects/digikala.png",
+    thumbnail: "/images/projects/digikala.webp",
     technologies: ["React", "Redux", "Tailwind CSS", "JavaScript", "Vite"],
     githubUrl: "https://github.com/Dorsavali/Digikala",
     demoUrl: "https://digikala.dorsavalli.com/",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     category: "AI Tools Landing Page",
     description:
       "A modern and responsive landing page designed to showcase an AI platform and its services. The project focuses on presenting AI-powered tools, features and solutions through a clean interface, structured sections and smooth responsive layouts.",
-    thumbnail: "/images/projects/aistack.png",
+    thumbnail: "/images/projects/aistack.webp",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     githubUrl: "https://github.com/Dorsavali/AIStack",
     demoUrl: "https://aistack.dorsavalli.com/",
