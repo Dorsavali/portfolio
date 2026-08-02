@@ -5,8 +5,8 @@ export default function Contact() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
 
-    link.href = "/documents/Dorsa-Valli-CV.pdf";
-    link.download = "/documents/Dorsa-Valli-CV.pdf";
+    link.href = "/documents/DorsaValli.pdf";
+    link.download = "/documents/DorsaValli.pdf";
 
     document.body.appendChild(link);
     link.click();

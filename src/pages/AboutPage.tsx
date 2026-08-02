@@ -5,8 +5,8 @@ import Button from "../components/common/Button";
 function About() {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Dorsa-Vali-CV.pdf";
-    link.download = "Dorsa-Vali-CV.pdf";
+    link.href = "/document/DorsaValli.pdf";
+    link.download = "/document/DorsaValli.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
