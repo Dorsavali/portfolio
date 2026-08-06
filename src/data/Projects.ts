@@ -47,5 +47,16 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/Dorsavali/AIStack",
     demoUrl: "https://aistack.dorsavalli.com/",
     featured: true,
-  },
+  },{
+  id: 5,
+  title: "OEM Admin Dashboard",
+  category: "Dashboard Redesign",
+  description:
+    "A complete redesign of three administrative dashboards for an enterprise management platform. The project focused on improving user experience, modernizing the interface, creating a consistent design system, and delivering fully responsive layouts while preserving the existing backend functionality.",
+  thumbnail: "/images/projects/dashboard.webp",
+  technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vite"],
+  githubUrl: "https://github.com/unifiedattestation/Backend",
+  demoUrl: "https://a.uattest.net",
+  featured: true,
+}
 ];
